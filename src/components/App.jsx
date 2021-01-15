@@ -28,8 +28,8 @@ function App() {
       </div>
       <div>
         <ul>
-          {items.map((todoItems) => {
-            return <li>{todoItems}</li>;
+          {items.map((todoItems, index) => {
+            return <li key={index}>{todoItems}</li>;
           })}
         </ul>
       </div>
